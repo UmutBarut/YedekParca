@@ -1,0 +1,14 @@
+C:\Users\Umut\Desktop\yedekparca\otoyedekparca\OtoYedekParca.Core\bin\Debug\net6.0\OtoYedekParca.Core.deps.json
+C:\Users\Umut\Desktop\yedekparca\otoyedekparca\OtoYedekParca.Core\bin\Debug\net6.0\OtoYedekParca.Core.runtimeconfig.json
+C:\Users\Umut\Desktop\yedekparca\otoyedekparca\OtoYedekParca.Core\bin\Debug\net6.0\OtoYedekParca.Core.dll
+C:\Users\Umut\Desktop\yedekparca\otoyedekparca\OtoYedekParca.Core\bin\Debug\net6.0\OtoYedekParca.Core.pdb
+C:\Users\Umut\Desktop\yedekparca\otoyedekparca\OtoYedekParca.Core\obj\Debug\net6.0\OtoYedekParca.Core.csproj.AssemblyReference.cache
+C:\Users\Umut\Desktop\yedekparca\otoyedekparca\OtoYedekParca.Core\obj\Debug\net6.0\OtoYedekParca.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Umut\Desktop\yedekparca\otoyedekparca\OtoYedekParca.Core\obj\Debug\net6.0\OtoYedekParca.Core.AssemblyInfoInputs.cache
+C:\Users\Umut\Desktop\yedekparca\otoyedekparca\OtoYedekParca.Core\obj\Debug\net6.0\OtoYedekParca.Core.AssemblyInfo.cs
+C:\Users\Umut\Desktop\yedekparca\otoyedekparca\OtoYedekParca.Core\obj\Debug\net6.0\OtoYedekParca.Core.csproj.CoreCompileInputs.cache
+C:\Users\Umut\Desktop\yedekparca\otoyedekparca\OtoYedekParca.Core\obj\Debug\net6.0\OtoYedekParca.Core.dll
+C:\Users\Umut\Desktop\yedekparca\otoyedekparca\OtoYedekParca.Core\obj\Debug\net6.0\refint\OtoYedekParca.Core.dll
+C:\Users\Umut\Desktop\yedekparca\otoyedekparca\OtoYedekParca.Core\obj\Debug\net6.0\OtoYedekParca.Core.pdb
+C:\Users\Umut\Desktop\yedekparca\otoyedekparca\OtoYedekParca.Core\obj\Debug\net6.0\OtoYedekParca.Core.genruntimeconfig.cache
+C:\Users\Umut\Desktop\yedekparca\otoyedekparca\OtoYedekParca.Core\obj\Debug\net6.0\ref\OtoYedekParca.Core.dll
