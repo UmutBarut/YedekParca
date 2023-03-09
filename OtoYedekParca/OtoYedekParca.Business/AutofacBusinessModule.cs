@@ -27,6 +27,12 @@ namespace OtoYedekParca.Business.DependencyResolvers.Autofac
             builder.RegisterType<FileManager>().As<IFileService>().SingleInstance();
             builder.RegisterType<FileHelper>().As<IFileHelper>().SingleInstance();
             
+            builder.RegisterType<UrunGrupManager>().As<IUrunGrupService>().SingleInstance();
+            builder.RegisterType<UrunGrupDal>().As<IUrunGrupDal>().SingleInstance();
+
+            builder.RegisterType<UrunManager>().As<IUrunService>().SingleInstance();
+            builder.RegisterType<UrunDal>().As<IUrunDal>().SingleInstance();
+
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
             builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces().EnableInterfaceInterceptors(new ProxyGenerationOptions()

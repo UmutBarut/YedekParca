@@ -11,6 +11,10 @@ namespace OtoYedekParca.Dataaccess.Concrete.Contexts
         public DbSet<Marka> Markalar { get; set; }
         public DbSet<Tip> Tipler { get; set; }
         public DbSet<Model> Modeller { get; set; }
+        public DbSet<UrunGrup> UrunGrubu { get; set; }
+        public DbSet<Urun> Urunler { get; set; }
+        public DbSet<Motor> Motorlar { get; set; }
+        public DbSet<Tip_Motor> Tip_Motor { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
