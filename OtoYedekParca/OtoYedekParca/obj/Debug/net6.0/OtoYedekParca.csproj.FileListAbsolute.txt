@@ -58,11 +58,9 @@ C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\st
 C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\scopedcss\bundle\OtoYedekParca.styles.css
-C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\scopedcss\projectbundle\OtoYedekParca.bundle.scp.css
 C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\OtoYedekParca.csproj.CopyComplete
 C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\OtoYedekParca.dll
 C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\refint\OtoYedekParca.dll
 C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\OtoYedekParca.pdb
 C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\OtoYedekParca.genruntimeconfig.cache
 C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\ref\OtoYedekParca.dll
-C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Acer\\Source\\Repos\\OtoParcaProjesi\\OtoYedekParca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj": {}
+    "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Acer\\Source\\Repos\\OtoParcaProjesi\\OtoYedekParca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj": {
+    "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Acer\\Source\\Repos\\OtoParcaProjesi\\OtoYedekParca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj",
         "projectName": "OtoYedekParca.Core",
-        "projectPath": "C:\\Users\\Acer\\Source\\Repos\\OtoParcaProjesi\\OtoYedekParca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj",
-        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Acer\\Source\\Repos\\OtoParcaProjesi\\OtoYedekParca\\OtoYedekParca.Core\\obj\\",
+        "projectPath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj",
+        "packagesPath": "C:\\Users\\Umut\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Umut\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
@@ -109,7 +109,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
