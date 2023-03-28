@@ -59,6 +59,31 @@ app.UseEndpoints(endpoints =>
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}"
     );
+     endpoints.MapControllerRoute(
+        name: "hakkimizda",
+        pattern: "hakkimizda",
+        defaults: new { controller = "Home", action = "Hakkimizda" }
+    );
+     endpoints.MapControllerRoute(
+        name: "MarkaTanimlama",
+        pattern: "MarkaTanimlama",
+        defaults: new { controller = "Admin", action = "Marka" }
+    );
+     endpoints.MapControllerRoute(
+        name: "TipTanimlama",
+        pattern: "TipTanimlama",
+        defaults: new { controller = "Admin", action = "Tip" }
+    );
+     endpoints.MapControllerRoute(
+        name: "ModelTanimlama",
+        pattern: "ModelTanimlama",
+        defaults: new { controller = "Admin", action = "Model" }
+    );
+     endpoints.MapControllerRoute(
+        name: "UrunTanimlama",
+        pattern: "UrunTanimlama",
+        defaults: new { controller = "Admin", action = "Urun" }
+    );
 
 });
 

@@ -16,6 +16,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Umut\Desktop\yedekparca\OtoYedekParca\otoyedekparca
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Umut/Desktop/yedekparca/OtoYedekParca/otoyedekparca/Views/Admin/Marka.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFya2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Umut/Desktop/yedekparca/OtoYedekParca/otoyedekparca/Views/Admin/Urun.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXJ1bi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Umut/Desktop/yedekparca/OtoYedekParca/otoyedekparca/Views/Home/Hakkimizda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWtraW1pemRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Umut/Desktop/yedekparca/OtoYedekParca/otoyedekparca/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

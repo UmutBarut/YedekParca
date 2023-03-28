@@ -1,7 +1,9 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace OtoYedekParca.Controllers
 {
+    [AllowAnonymous]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -16,5 +18,11 @@ namespace OtoYedekParca.Controllers
         {
             return View("Index");
         }
+
+        public IActionResult Hakkimizda()
+        {
+            return View();
+        }
+        
     }
 }
