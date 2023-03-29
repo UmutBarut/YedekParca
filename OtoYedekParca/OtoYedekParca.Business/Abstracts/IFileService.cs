@@ -13,5 +13,6 @@ namespace OtoYedekParca.Business.Abstracts
     public interface IFileService
     {
        Task<IResult> AddForMarka(IFormFile dosya, Marka marka);
+       Task<IResult> AddForUrun(IFormFile dosya, Urun urun);
     }
 }

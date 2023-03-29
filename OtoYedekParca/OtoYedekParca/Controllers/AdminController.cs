@@ -65,7 +65,7 @@ namespace OtoYedekParca.Controllers
             marka.Siralama = 0;
             _markaService.Add(marka);
 
-            return RedirectToAction("");
+            return RedirectToAction("Index","Home");
         }
 
     }
