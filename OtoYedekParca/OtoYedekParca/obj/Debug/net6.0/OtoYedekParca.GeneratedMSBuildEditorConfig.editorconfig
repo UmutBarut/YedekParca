@@ -9,57 +9,65 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OtoYedekParca
 build_property.RootNamespace = OtoYedekParca
-build_property.ProjectDir = C:\Users\Umut\Desktop\yedekparca\OtoYedekParca\otoyedekparca\
+build_property.ProjectDir = c:\Users\Umut\Desktop\yedekparca\OtoYedekParca\OtoYedekParca\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Umut\Desktop\yedekparca\OtoYedekParca\otoyedekparca
+build_property.MSBuildProjectDirectory = c:\Users\Umut\Desktop\yedekparca\OtoYedekParca\OtoYedekParca
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Umut/Desktop/yedekparca/OtoYedekParca/otoyedekparca/Views/Admin/Marka.cshtml]
+[c:/Users/Umut/Desktop/yedekparca/OtoYedekParca/OtoYedekParca/Views/Admin/Marka.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFya2EuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Umut/Desktop/yedekparca/OtoYedekParca/otoyedekparca/Views/Admin/Urun.cshtml]
+[c:/Users/Umut/Desktop/yedekparca/OtoYedekParca/OtoYedekParca/Views/Admin/Model.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTW9kZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Umut/Desktop/yedekparca/OtoYedekParca/OtoYedekParca/Views/Admin/Tip.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGlwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Umut/Desktop/yedekparca/OtoYedekParca/OtoYedekParca/Views/Admin/Urun.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXJ1bi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Umut/Desktop/yedekparca/OtoYedekParca/otoyedekparca/Views/Home/Hakkimizda.cshtml]
+[c:/Users/Umut/Desktop/yedekparca/OtoYedekParca/OtoYedekParca/Views/Home/Hakkimizda.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWtraW1pemRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Umut/Desktop/yedekparca/OtoYedekParca/otoyedekparca/Views/Home/Index.cshtml]
+[c:/Users/Umut/Desktop/yedekparca/OtoYedekParca/OtoYedekParca/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Umut/Desktop/yedekparca/OtoYedekParca/otoyedekparca/Views/Shared/_Aside.cshtml]
+[c:/Users/Umut/Desktop/yedekparca/OtoYedekParca/OtoYedekParca/Views/Shared/_Aside.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Bc2lkZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Umut/Desktop/yedekparca/OtoYedekParca/otoyedekparca/Views/Shared/_Footer.cshtml]
+[c:/Users/Umut/Desktop/yedekparca/OtoYedekParca/OtoYedekParca/Views/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Umut/Desktop/yedekparca/OtoYedekParca/otoyedekparca/Views/Shared/_Layout.cshtml]
+[c:/Users/Umut/Desktop/yedekparca/OtoYedekParca/OtoYedekParca/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Umut/Desktop/yedekparca/OtoYedekParca/otoyedekparca/Views/Shared/_Navbar.cshtml]
+[c:/Users/Umut/Desktop/yedekparca/OtoYedekParca/OtoYedekParca/Views/Shared/_Navbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Umut/Desktop/yedekparca/OtoYedekParca/otoyedekparca/Views/Shared/_Toolbar.cshtml]
+[c:/Users/Umut/Desktop/yedekparca/OtoYedekParca/OtoYedekParca/Views/Shared/_Toolbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ub29sYmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Umut/Desktop/yedekparca/OtoYedekParca/otoyedekparca/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/Umut/Desktop/yedekparca/OtoYedekParca/OtoYedekParca/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Umut/Desktop/yedekparca/OtoYedekParca/otoyedekparca/Views/_ViewImports.cshtml]
+[c:/Users/Umut/Desktop/yedekparca/OtoYedekParca/OtoYedekParca/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Umut/Desktop/yedekparca/OtoYedekParca/otoyedekparca/Views/_ViewStart.cshtml]
+[c:/Users/Umut/Desktop/yedekparca/OtoYedekParca/OtoYedekParca/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

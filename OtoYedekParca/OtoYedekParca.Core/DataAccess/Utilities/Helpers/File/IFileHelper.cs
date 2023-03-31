@@ -15,8 +15,8 @@ namespace OtoYedekParca.Core.Utilities.Helpers.File
         void CheckDirectoryExist(string directory);
         IResult CheckFileTypeValid(string type);
         IResult CheckFileExist(IFormFile file);
-        IResult Upload(IFormFile file);
-        IResult Update(IFormFile file, string imagePath);
-        IResult Remove(string path);
+        IResult Upload(IFormFile file,string folderName);
+        IResult Update(IFormFile file, string imagePath,string folderName);
+        IResult Remove(string path,string folderName);
     }
 }

@@ -55,7 +55,6 @@ namespace OtoYedekParca.Controllers
         public IActionResult Marka()
         {
             return View();
-
         }
 
         [HttpPost]
@@ -64,6 +63,49 @@ namespace OtoYedekParca.Controllers
             marka.Pasif = false;
             marka.Siralama = 0;
             _markaService.Add(marka);
+
+            return RedirectToAction("Index","Home");
+        }
+
+        [HttpGet]
+        public IActionResult Tip()
+        {
+            TanimlamaViewModel model = new TanimlamaViewModel()
+            {
+                markalar = _markaService.GetAll().Data
+            };
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult Tip(Tip tip)
+        {
+            tip.Pasif = false;
+            tip.Siralama = 0;
+            _tipService.Add(tip);
+
+            return RedirectToAction("Index","Home");
+        }
+
+        [HttpGet]
+        public IActionResult Model()
+        {
+            TanimlamaViewModel model = new TanimlamaViewModel()
+            {
+                markalar = _markaService.GetAll().Data,
+                tipler = _tipService.GetAll().Data
+            };
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult Model(Model model)
+        {
+            model.Pasif = false;
+            model.Siralama = 0;
+            _modelService.Add(model);
 
             return RedirectToAction("Index","Home");
         }

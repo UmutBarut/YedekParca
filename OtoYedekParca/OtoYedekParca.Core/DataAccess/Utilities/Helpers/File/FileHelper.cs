@@ -6,8 +6,7 @@ namespace OtoYedekParca.Core.Utilities.Helpers.File
     public class FileHelper : IFileHelper
     {
         private static string _currentDirectory = Environment.CurrentDirectory + "\\wwwroot";
-        private static string _folderName = "\\Urunler\\";
-        public void CheckDirectoryExist(string directory) 
+        public void CheckDirectoryExist(string directory)
         {
             if (!Directory.Exists(directory))
             {
@@ -23,11 +22,7 @@ namespace OtoYedekParca.Core.Utilities.Helpers.File
                 return new ErrorResult("En az bir dosya yüklemelisiniz.");
 
             }
-
-
             return new SuccessResult();
-
-
         }
 
         public IResult CheckFileTypeValid(string type)
@@ -46,13 +41,14 @@ namespace OtoYedekParca.Core.Utilities.Helpers.File
 
                 file.CopyTo(fileStream);
                 fileStream.Flush();
-
-
             }
         }
 
-        public IResult Remove(string path)
+        public IResult Remove(string path,string foldername)
         {
+                string _folderName = "\\app\\images\\PATH\\";
+
+            _folderName = _folderName.Replace("PATH",foldername);
             RemoveOldFile((_currentDirectory + _folderName + path).Replace("/", "\\"));
             return new SuccessResult();
         }
@@ -65,8 +61,12 @@ namespace OtoYedekParca.Core.Utilities.Helpers.File
             }
         }
 
-        public IResult Update(IFormFile file, string imagePath)
+        public IResult Update(IFormFile file, string imagePath,string folderName)
         {
+                string _folderName = "\\app\\images\\PATH\\";
+            _folderName = _folderName.Replace("PATH",folderName);
+
+
             List<string> ImagePaths = new List<string>();
 
             var fileExists = CheckFileExist(file);
@@ -75,7 +75,7 @@ namespace OtoYedekParca.Core.Utilities.Helpers.File
                 return new ErrorResult(fileExists.Message);
             }
 
-            var type = Path.GetExtension(file.FileName);
+            var type = Path.GetExtension(file.FileName); 
             var typeValid = CheckFileTypeValid(type);
             if (typeValid == null)
             {
@@ -90,9 +90,10 @@ namespace OtoYedekParca.Core.Utilities.Helpers.File
 
         }
 
-        public IResult Upload(IFormFile file)
+        public IResult Upload(IFormFile file,string folderName)
         {
-
+                string _folderName = "\\app\\images\\PATH\\";
+            _folderName = _folderName.Replace("PATH",folderName);
             List<string> ImagePaths = new List<string>();
 
             var fileExists = CheckFileExist(file);
@@ -117,5 +118,15 @@ namespace OtoYedekParca.Core.Utilities.Helpers.File
 
         }
 
+
+
+
+
+
+
+
+
+
+        
     }
 }

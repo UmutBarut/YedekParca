@@ -14,5 +14,6 @@ namespace OtoYedekParca.Business.Abstracts
     {
        Task<IResult> AddForMarka(IFormFile dosya, Marka marka);
        Task<IResult> AddForUrun(IFormFile dosya, Urun urun);
+        Task<IResult> AddForModel(IFormFile dosya, Model model);
     }
 }
