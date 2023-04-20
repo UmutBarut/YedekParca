@@ -22,5 +22,6 @@ namespace OtoYedekParca.Entity
         public int MinStok { get; set; }
         public int Miktar { get; set; }
         public DateTime EklenmeTarihi { get; set; }
+        public int GrupId { get; set; }
     }
 }

@@ -9,24 +9,34 @@ using OtoYedekParca.Business.Abstracts;
 using OtoYedekParca.Business.Concrete;
 using OtoYedekParca.Business.DependencyResolvers.Autofac;
 using OtoYedekParca.Dataaccess.Concrete.Contexts;
+using Newtonsoft.Json.Serialization;
 
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddMvc().AddNewtonsoftJson(options =>
+    options.SerializerSettings.ContractResolver = new DefaultContractResolver()
+);
 
-
+builder.Services.AddRazorPages();
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory()).ConfigureContainer<ContainerBuilder>(builder =>
 {
     builder.RegisterModule(new AutofacBusinessModule());
 });
 
 
+
+builder.Services.AddSignalR();
+builder.Services.AddCors();
 builder.Services.AddDbContext<ApplicationDbContext>();
 builder.Services.AddIdentity<User , IdentityRole>(x => 
 {
-x.Password.RequiredLength = 6;
+    x.Password.RequireNonAlphanumeric = false;
+    x.Password.RequiredLength = 6;
+    x.Password.RequireLowercase = false;
+    x.Password.RequireDigit = false;
+    x.Password.RequireUppercase = false;
+    x.User.RequireUniqueEmail = true;
 }).AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 
 builder.Services.ConfigureApplicationCookie(options =>
@@ -35,10 +45,7 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.Cookie.Name = "auth_cookie";
     options.ExpireTimeSpan = TimeSpan.FromMinutes(15);
     options.ReturnUrlParameter = CookieAuthenticationDefaults.ReturnUrlParameter;
-    
-
 });
-
 
 
 var app = builder.Build();
@@ -54,7 +61,11 @@ app.UseRouting();
 app.UseAuthorization();
 app.UseEndpoints(endpoints =>
 {
-
+     endpoints.MapControllerRoute(
+      name: "GirisYap",
+      pattern: "GirisYap",
+      defaults: new { controller = "Login", action = "Login" }
+  );
     endpoints.MapControllerRoute(
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}"

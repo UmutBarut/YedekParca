@@ -13,10 +13,10 @@ namespace OtoYedekParca.Core.Utilities.Helpers.File
         void RemoveOldFile(string directory);
         void CreateFile(string directory, IFormFile file);
         void CheckDirectoryExist(string directory);
-        IResult CheckFileTypeValid(string type);
-        IResult CheckFileExist(IFormFile file);
-        IResult Upload(IFormFile file,string folderName);
-        IResult Update(IFormFile file, string imagePath,string folderName);
-        IResult Remove(string path,string folderName);
+        Results.IResult CheckFileTypeValid(string type);
+        Results.IResult CheckFileExist(IFormFile file);
+        Results.IResult Upload(IFormFile file,string folderName);
+        Results.IResult Update(IFormFile file, string imagePath,string folderName);
+        Results.IResult Remove(string path,string folderName);
     }
 }

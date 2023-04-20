@@ -11,10 +11,10 @@ namespace OtoYedekParca.Entity
     public class Tip : IEntity
     {
         [Key]
-        public long TipId { get; set; }
+        public int TipId { get; set; }
         public string TipAdi { get; set; }
-        public long MarkaId { get; set; }
-        public long Siralama { get; set; }
+        public int MarkaId { get; set; }
+        public int Siralama { get; set; }
         public bool Pasif { get; set; }
     }
 }

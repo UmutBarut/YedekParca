@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+
+    <link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
+    <link rel="shortcut icon" href="/metronic8/demo7/assets/media/logos/favicon.ico" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+
+    <link href="/demo7/dist/assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/demo7/dist/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+
+    <link href="/demo7/dist/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/demo7/dist/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="main">
+
+    @RenderBody()
+
+    <link href="~/css/devextreme/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/devextreme/dx.common.css" rel="stylesheet" />
+    <link href="~/css/devextreme/dx.light.css" rel="stylesheet" />
+    <script src="~/js/devextreme/jquery.js"></script>
+    <script src="~/js/devextreme/bootstrap.js"></script>
+
+
+    <script src="~/js/devextreme/dx.all.js"></script>
+    <script src="~/js/devextreme/aspnet/dx.aspnet.mvc.js"></script>
+    <script src="~/js/devextreme/aspnet/dx.aspnet.data.js"></script>
+
+    <script>var hostUrl = "/metronic8/demo7/assets/";</script>
+
+    <script src="/demo7/dist/assets/plugins/global/plugins.bundle.js"></script>
+    <script src="/demo7/dist/assets/js/scripts.bundle.js"></script>
+
+    <script src="/demo7/dist/assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/continentsLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/usaLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZonesLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZoneAreasLow.js"></script>
+    <script src="/demo7/dist/assets/plugins/custom/datatables/datatables.bundle.js"></script>
+
+    <script src="/demo7/dist/assets/js/widgets.bundle.js"></script>
+    <script src="/demo7/dist/assets/js/custom/widgets.js"></script>
+    <script src="/demo7/dist/assets/js/custom/apps/chat/chat.js"></script>
+    <script src="/demo7/dist/assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+    <script src="/demo7/dist/assets/js/custom/utilities/modals/create-app.js"></script>
+    <script src="/demo7/dist/assets/js/custom/utilities/modals/users-search.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/devextreme/22.2.3/js/dx.all.js"
+        integrity="sha512-+apQ+oBhAztDHEDDBjPyn+qPezae/03N6PsucxU/eo8cW4gYjEIWimS8pOp4NA9ArQX3y5eDIxyaN/ecZDzy0Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

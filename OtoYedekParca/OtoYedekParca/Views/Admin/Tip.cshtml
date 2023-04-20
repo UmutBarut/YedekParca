@@ -1,8 +1,5 @@
-@using OtoYedekParca.ViewModels;
-@model TanimlamaViewModel;
 
-
-<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+@* <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
     <div class=" container-xxl " id="kt_content_container">
         <form asp-controller="Admin" asp-action="Tip" method="POST">
             <div class="card card-flush shadow-sm">
@@ -36,5 +33,73 @@
                 </div>
             </div>
         </form>
+    </div>
+</div> *@
+
+
+@using OtoYedekParca.Entity;
+
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+    <div class=" container-xxl " id="kt_content_container">
+    <div class="card card-flush shadow-sm">
+            <div class="card-header">
+                <h3 class="card-title">Tip Tanımlayın</h3>
+            </div>
+            <div class="card-body py-5">
+                            
+                @(Html.DevExtreme().DataGrid<Tip>()
+                    .ID("dxContainer")
+                    .DataSource(d => d.Mvc()
+                    .Controller("Admin")
+                    .LoadAction("GetAllTip")
+                    .UpdateAction("UpdateTip")
+                    .DeleteAction("DeleteTip")
+                    .InsertAction("AddTip")
+                    .Key("TipId")
+                    )
+                    .RemoteOperations(true)
+                    .Columns(columns => {
+
+
+                    columns.AddFor(m => m.MarkaId).AllowEditing(true).Lookup(l=>l.DataSource(d=>d.Mvc().LoadAction("GetAllMarka").Key("MarkaId")).DisplayExpr("MarkaAdi").ValueExpr("MarkaId")).Alignment(HorizontalAlignment.Left).Caption("Marka").AllowFiltering(true);
+
+                    columns.AddFor(m=>m.TipAdi).AllowEditing(true).Alignment(HorizontalAlignment.Left).Caption("Tip");
+                
+                    })
+                    .SearchPanel(s => s
+                    .Visible(true)
+                    .HighlightCaseSensitive(true)
+                    .Placeholder("Ara")
+                    .Width(200))
+                    .FilterRow(f => f.Visible(true))
+                    .HeaderFilter(f => f.Visible(true))
+                    .ShowBorders(true)
+                    .GroupPanel(p => p.Visible(true).EmptyPanelText("Tipler"))
+                    .Height("100%")
+                    .Paging(paging => paging.PageSize(10))
+                    .Editing(e =>
+                    e.AllowAdding(true)
+                    .AllowDeleting(true)
+                    .AllowUpdating(true)
+                    .UseIcons(true)
+                    .Mode(GridEditMode.Popup)
+                    .Popup(p=>
+                    p.Title("Tip Ekle & Düzenle")
+                    .ShowTitle(true)
+                    .Width(700)))
+                    .Pager(p=>
+                    p.AllowedPageSizes(new JS("[5, 10, 20]"))
+                    .ShowNavigationButtons(true)
+                    .ShowPageSizeSelector(true)
+                    .Visible(true)
+                    .ShowNavigationButtons(true) 
+                    .ShowInfo(true)
+                    .DisplayMode(GridPagerDisplayMode.Full))
+                    .Grouping(g => g.AutoExpandAll(false)))
+            </div>
+            <div class="card-footer">
+            
+            </div>
+        </div>
     </div>
 </div>

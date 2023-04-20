@@ -1,5 +1,5 @@
-using OtoYedekParca.Core.Utilities.Results;
 using Microsoft.AspNetCore.Http;
+using OtoYedekParca.Core.Utilities.Results;
 
 namespace OtoYedekParca.Core.Utilities.Helpers.File
 {
@@ -14,7 +14,7 @@ namespace OtoYedekParca.Core.Utilities.Helpers.File
             }
         }
 
-        public IResult CheckFileExist(IFormFile file)
+        public Results.IResult CheckFileExist(IFormFile file)
         {
 
             if (file == null && file.Length == 0)
@@ -25,7 +25,7 @@ namespace OtoYedekParca.Core.Utilities.Helpers.File
             return new SuccessResult();
         }
 
-        public IResult CheckFileTypeValid(string type)
+        public Results.IResult CheckFileTypeValid(string type)
         {
             if (type != ".jpeg" && type != ".jpg" && type != ".png" && type != ".jfif")
             {
@@ -44,7 +44,7 @@ namespace OtoYedekParca.Core.Utilities.Helpers.File
             }
         }
 
-        public IResult Remove(string path,string foldername)
+        public Results.IResult Remove(string path,string foldername)
         {
                 string _folderName = "\\app\\images\\PATH\\";
 
@@ -61,7 +61,7 @@ namespace OtoYedekParca.Core.Utilities.Helpers.File
             }
         }
 
-        public IResult Update(IFormFile file, string imagePath,string folderName)
+        public Results.IResult Update(IFormFile file, string imagePath,string folderName)
         {
                 string _folderName = "\\app\\images\\PATH\\";
             _folderName = _folderName.Replace("PATH",folderName);
@@ -90,7 +90,7 @@ namespace OtoYedekParca.Core.Utilities.Helpers.File
 
         }
 
-        public IResult Upload(IFormFile file,string folderName)
+        public Results.IResult Upload(IFormFile file,string folderName)
         {
                 string _folderName = "\\app\\images\\PATH\\";
             _folderName = _folderName.Replace("PATH",folderName);

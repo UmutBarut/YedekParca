@@ -173,15 +173,15 @@ namespace OtoYedekParca.Dataaccess.Migrations
 
             modelBuilder.Entity("OtoYedekParca.Entity.Model", b =>
                 {
-                    b.Property<long>("ModelId")
+                    b.Property<int>("ModelId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("int");
 
                     b.Property<string>("ImagePath")
                         .HasColumnType("longtext");
 
-                    b.Property<long>("MarkaId")
-                        .HasColumnType("bigint");
+                    b.Property<int>("MarkaId")
+                        .HasColumnType("int");
 
                     b.Property<string>("ModelAdi")
                         .IsRequired()
@@ -190,11 +190,11 @@ namespace OtoYedekParca.Dataaccess.Migrations
                     b.Property<bool>("Pasif")
                         .HasColumnType("tinyint(1)");
 
-                    b.Property<long>("Siralama")
-                        .HasColumnType("bigint");
+                    b.Property<int>("Siralama")
+                        .HasColumnType("int");
 
-                    b.Property<long>("TipId")
-                        .HasColumnType("bigint");
+                    b.Property<int>("TipId")
+                        .HasColumnType("int");
 
                     b.HasKey("ModelId");
 
@@ -236,18 +236,18 @@ namespace OtoYedekParca.Dataaccess.Migrations
 
             modelBuilder.Entity("OtoYedekParca.Entity.Tip", b =>
                 {
-                    b.Property<long>("TipId")
+                    b.Property<int>("TipId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
+                        .HasColumnType("int");
 
-                    b.Property<long>("MarkaId")
-                        .HasColumnType("bigint");
+                    b.Property<int>("MarkaId")
+                        .HasColumnType("int");
 
                     b.Property<bool>("Pasif")
                         .HasColumnType("tinyint(1)");
 
-                    b.Property<long>("Siralama")
-                        .HasColumnType("bigint");
+                    b.Property<int>("Siralama")
+                        .HasColumnType("int");
 
                     b.Property<string>("TipAdi")
                         .IsRequired()
@@ -293,6 +293,9 @@ namespace OtoYedekParca.Dataaccess.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.Property<int>("Fiyat")
+                        .HasColumnType("int");
+
+                    b.Property<int>("GrupId")
                         .HasColumnType("int");
 
                     b.Property<string>("ImagePath")

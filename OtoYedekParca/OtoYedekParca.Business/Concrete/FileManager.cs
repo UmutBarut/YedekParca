@@ -27,7 +27,7 @@ namespace OtoYedekParca.Business.Concrete
             _modelService = modelService;
         }
 
-        public async Task<IResult> AddForUrun(IFormFile file, Urun urun)
+        public async Task<OtoYedekParca.Core.Utilities.Results.IResult> AddForUrun(IFormFile file, Urun urun)
         {
             string folderName ="urunler";
              if (!string.IsNullOrEmpty(urun.ImagePath))
@@ -45,7 +45,7 @@ namespace OtoYedekParca.Business.Concrete
             return new SuccessResult("Resim Başarıyla Yüklendi");
         }
 
-        public async Task<IResult> AddForMarka(IFormFile file,Marka marka)
+        public async Task<OtoYedekParca.Core.Utilities.Results.IResult> AddForMarka(IFormFile file,Marka marka)
         {
            string folderName ="markalar";
              if (!string.IsNullOrEmpty(marka.ImagePath))
@@ -63,7 +63,7 @@ namespace OtoYedekParca.Business.Concrete
             return new SuccessResult("Resim Başarıyla Yüklendi");
         }
 
-        public async Task<IResult> AddForModel(IFormFile file,Model model)
+        public async Task<OtoYedekParca.Core.Utilities.Results.IResult> AddForModel(IFormFile file,Model model)
         {
             string folderName ="modeller";
              if (!string.IsNullOrEmpty(model.ImagePath))

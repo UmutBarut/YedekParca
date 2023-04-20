@@ -3,15 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtoYedekParca", "OtoYedekParca\OtoYedekParca.csproj", "{E27C81E3-8EA0-408F-9299-1062A27A6175}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OtoYedekParca", "OtoYedekParca\OtoYedekParca.csproj", "{E27C81E3-8EA0-408F-9299-1062A27A6175}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtoYedekParca.Dataaccess", "OtoYedekParca.Dataaccess\OtoYedekParca.Dataaccess.csproj", "{CF707340-7C50-4841-95FF-1163C606E39E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OtoYedekParca.Dataaccess", "OtoYedekParca.Dataaccess\OtoYedekParca.Dataaccess.csproj", "{CF707340-7C50-4841-95FF-1163C606E39E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtoYedekParca.Business", "OtoYedekParca.Business\OtoYedekParca.Business.csproj", "{EEC8E406-6EFC-4239-9545-001B1AE36578}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OtoYedekParca.Business", "OtoYedekParca.Business\OtoYedekParca.Business.csproj", "{EEC8E406-6EFC-4239-9545-001B1AE36578}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtoYedekParca.Entity", "OtoYedekParca.Entity\OtoYedekParca.Entity.csproj", "{CADB32AD-9394-49E9-A827-0AEA254D5D0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OtoYedekParca.Entity", "OtoYedekParca.Entity\OtoYedekParca.Entity.csproj", "{CADB32AD-9394-49E9-A827-0AEA254D5D0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtoYedekParca.Core", "OtoYedekParca.Core\OtoYedekParca.Core.csproj", "{BACED93E-28B6-40F0-9BAE-04E759302562}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OtoYedekParca.Core", "OtoYedekParca.Core\OtoYedekParca.Core.csproj", "{BACED93E-28B6-40F0-9BAE-04E759302562}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevExtreme NuGet.config", "DevExtreme NuGet.config", "{549E3B43-4294-4DB7-AF9B-52A68F19FF92}"
+	ProjectSection(SolutionItems) = preProject
+		NuGet.config = NuGet.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
