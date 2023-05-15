@@ -149,7 +149,7 @@ namespace OtoYedekParca.Controllers
         [HttpGet]
         public IActionResult Register()
         {
-            ViewData["Title"] = "Kullanıcı Kayıt";
+            ViewData["Title"] = "Kayıt Ol";
             return View();
         }
 

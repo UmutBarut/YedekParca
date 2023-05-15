@@ -172,7 +172,7 @@
 									</div>
 									<!--end::Menu item-->
 
-									@if (User.Identity.IsAuthenticated)
+									@if (User.IsInRole("Admin"))
 									{
 										<!--begin::Menu item-->
 										<div class="menu-item menu-link-indention menu-accordion" data-kt-menu-trigger="click">
