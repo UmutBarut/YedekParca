@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\otoyedekparca\\OtoYedekParca.csproj": {}
+    "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\otoyedekparca\\OtoYedekParca.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Business\\OtoYedekParca.Business.csproj": {
+    "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Business\\OtoYedekParca.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Business\\OtoYedekParca.Business.csproj",
+        "projectUniqueName": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Business\\OtoYedekParca.Business.csproj",
         "projectName": "OtoYedekParca.Business",
-        "projectPath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Business\\OtoYedekParca.Business.csproj",
+        "projectPath": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Business\\OtoYedekParca.Business.csproj",
         "packagesPath": "C:\\Users\\Umut\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Business\\obj\\",
+        "outputPath": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\NuGet.Config",
+          "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\NuGet.Config",
           "C:\\Users\\Umut\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config"
@@ -36,14 +36,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj": {
-                "projectPath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj"
+              "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj": {
+                "projectPath": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj"
               },
-              "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Dataaccess\\OtoYedekParca.Dataaccess.csproj": {
-                "projectPath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Dataaccess\\OtoYedekParca.Dataaccess.csproj"
+              "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Dataaccess\\OtoYedekParca.Dataaccess.csproj": {
+                "projectPath": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Dataaccess\\OtoYedekParca.Dataaccess.csproj"
               },
-              "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Entity\\OtoYedekParca.Entity.csproj": {
-                "projectPath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Entity\\OtoYedekParca.Entity.csproj"
+              "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Entity\\OtoYedekParca.Entity.csproj": {
+                "projectPath": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Entity\\OtoYedekParca.Entity.csproj"
               }
             }
           }
@@ -117,21 +117,21 @@
         }
       }
     },
-    "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj": {
+    "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj",
         "projectName": "OtoYedekParca.Core",
-        "projectPath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj",
+        "projectPath": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj",
         "packagesPath": "C:\\Users\\Umut\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\obj\\",
+        "outputPath": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\NuGet.Config",
+          "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\NuGet.Config",
           "C:\\Users\\Umut\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config"
@@ -232,21 +232,21 @@
         }
       }
     },
-    "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Dataaccess\\OtoYedekParca.Dataaccess.csproj": {
+    "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Dataaccess\\OtoYedekParca.Dataaccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Dataaccess\\OtoYedekParca.Dataaccess.csproj",
+        "projectUniqueName": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Dataaccess\\OtoYedekParca.Dataaccess.csproj",
         "projectName": "OtoYedekParca.Dataaccess",
-        "projectPath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Dataaccess\\OtoYedekParca.Dataaccess.csproj",
+        "projectPath": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Dataaccess\\OtoYedekParca.Dataaccess.csproj",
         "packagesPath": "C:\\Users\\Umut\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Dataaccess\\obj\\",
+        "outputPath": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Dataaccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\NuGet.Config",
+          "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\NuGet.Config",
           "C:\\Users\\Umut\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config"
@@ -264,11 +264,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj": {
-                "projectPath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj"
+              "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj": {
+                "projectPath": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj"
               },
-              "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Entity\\OtoYedekParca.Entity.csproj": {
-                "projectPath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Entity\\OtoYedekParca.Entity.csproj"
+              "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Entity\\OtoYedekParca.Entity.csproj": {
+                "projectPath": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Entity\\OtoYedekParca.Entity.csproj"
               }
             }
           }
@@ -334,21 +334,21 @@
         }
       }
     },
-    "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Entity\\OtoYedekParca.Entity.csproj": {
+    "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Entity\\OtoYedekParca.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Entity\\OtoYedekParca.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Entity\\OtoYedekParca.Entity.csproj",
         "projectName": "OtoYedekParca.Entity",
-        "projectPath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Entity\\OtoYedekParca.Entity.csproj",
+        "projectPath": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Entity\\OtoYedekParca.Entity.csproj",
         "packagesPath": "C:\\Users\\Umut\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Entity\\obj\\",
+        "outputPath": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\NuGet.Config",
+          "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\NuGet.Config",
           "C:\\Users\\Umut\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config"
@@ -366,8 +366,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj": {
-                "projectPath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj"
+              "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj": {
+                "projectPath": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj"
               }
             }
           }
@@ -429,21 +429,21 @@
         }
       }
     },
-    "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\otoyedekparca\\OtoYedekParca.csproj": {
+    "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\otoyedekparca\\OtoYedekParca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\otoyedekparca\\OtoYedekParca.csproj",
+        "projectUniqueName": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\otoyedekparca\\OtoYedekParca.csproj",
         "projectName": "OtoYedekParca",
-        "projectPath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\otoyedekparca\\OtoYedekParca.csproj",
+        "projectPath": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\otoyedekparca\\OtoYedekParca.csproj",
         "packagesPath": "C:\\Users\\Umut\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\otoyedekparca\\obj\\",
+        "outputPath": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\otoyedekparca\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\NuGet.Config",
+          "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\NuGet.Config",
           "C:\\Users\\Umut\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config"
@@ -461,14 +461,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Business\\OtoYedekParca.Business.csproj": {
-                "projectPath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Business\\OtoYedekParca.Business.csproj"
+              "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Business\\OtoYedekParca.Business.csproj": {
+                "projectPath": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Business\\OtoYedekParca.Business.csproj"
               },
-              "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj": {
-                "projectPath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj"
+              "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj": {
+                "projectPath": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj"
               },
-              "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Entity\\OtoYedekParca.Entity.csproj": {
-                "projectPath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Entity\\OtoYedekParca.Entity.csproj"
+              "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Entity\\OtoYedekParca.Entity.csproj": {
+                "projectPath": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Entity\\OtoYedekParca.Entity.csproj"
               }
             }
           }

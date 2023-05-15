@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LX3Khox4I6H+pMU7gbNz1tnRpLI/gtxam8QYZlRwRwZzkVcSiBak4mgtgNjv9ZLBCoHYpD92JdZBZ5hQZSf8VQ==",
+  "dgSpecHash": "XAMOZ9zhPe/azuPOS/gRFce8aNL5t+UUx66QqUQxXQBuyoGOmwzOwV/Ixt7N2mEniE5ljGv/nI7egGvU4HwIww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Umut\\Desktop\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj",
+  "projectFilePath": "C:\\Users\\Umut\\Desktop\\yedek\\yedekparca\\otoyedekparca\\OtoYedekParca.Core\\OtoYedekParca.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Umut\\.nuget\\packages\\autofac\\6.5.0\\autofac.6.5.0.nupkg.sha512",
     "C:\\Users\\Umut\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
