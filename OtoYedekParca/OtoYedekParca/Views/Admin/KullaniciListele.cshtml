@@ -1,0 +1,86 @@
+@using OtoYedekParca.Entity;
+
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+    <div class=" container-xxl " id="kt_content_container">
+        <div class="card card-flush shadow-sm">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h3 class="card-title">Kullanıcı Listesi</h3>
+                <a asp-controller="Login" asp-action="Register" class="btn btn-primary">Kullanıcı Ekle</a>
+            </div>
+            <div class="card-body py-5">
+                    @(Html.DevExtreme().DataGrid<User>()
+                .DataSource(d => d.Mvc()
+                .Controller("Users")
+                .LoadAction("GetUsers")
+                .UpdateAction("UpdateUser")
+                .DeleteAction("DeleteUser")
+                .Key("Id")
+
+                )
+                .RemoteOperations(true)
+                .Columns(columns => {
+
+                columns.AddFor(m=>m.Id).Visible(false).AllowEditing(false);
+
+                columns.AddFor(m => m.UserName).AllowEditing(true).AllowFiltering(true).Visible(true).Caption("Kullanıcı Adı");
+
+                columns.AddFor(m => m.Email).Alignment(HorizontalAlignment.Left).AllowHiding(true).HidingPriority(1);
+
+                columns.AddFor(m => m.IsAdmin).Caption("Admin").AllowHiding(true).HidingPriority(2);
+
+                })
+
+                .FilterRow(f => f.Visible(true))
+                .HeaderFilter(f => f.Visible(true))
+            
+                .Height("100%")
+                .ShowBorders(true)
+
+                .Pager(p=>
+                    p.AllowedPageSizes(new JS("[5, 10, 20]"))
+                    .ShowNavigationButtons(true)
+                    .ShowPageSizeSelector(true)
+                    .Visible(true)
+                    .ShowNavigationButtons(true)
+                    .ShowInfo(true)
+                    .DisplayMode(GridPagerDisplayMode.Full)
+                    )
+                .Paging(p=>p.PageSize(10).Enabled(true))
+                    @*.MasterDetail(md => md
+                        .Enabled(true)
+                        .Template(@<text>
+
+                        @(Html.DevExtreme().DataGrid()
+                        .DataSource(d => d.Mvc()
+                        .Controller("VGrup")
+                        .LoadAction("OrderDetails")
+                        .LoadParams(new { vGrupId = new JS("data.VGrupId") })
+                        )
+                        .ShowBorders(true)
+                        )
+
+                        </text>)
+                        )*@
+                .Editing(e =>
+                e.AllowAdding(false)
+                .AllowDeleting(true)
+                .AllowUpdating(true)
+                .UseIcons(true)
+                .Mode(GridEditMode.Popup)
+                .Popup(p=>
+                p.Title("Kullanıcı Ekle & Güncelle")
+                .ShowTitle(true)
+                .Width(700)
+                )
+                )
+                .Grouping(g => g.AutoExpandAll(false))
+
+                )
+            </div>
+            <div class="card-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+

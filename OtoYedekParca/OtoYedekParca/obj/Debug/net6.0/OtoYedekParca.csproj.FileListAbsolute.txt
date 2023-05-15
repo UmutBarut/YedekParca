@@ -50,11 +50,6 @@ C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\Ot
 C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\OtoYedekParca.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\OtoYedekParca.RazorAssemblyInfo.cache
 C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\OtoYedekParca.RazorAssemblyInfo.cs
-C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\staticwebassets\msbuild.OtoYedekParca.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\staticwebassets\msbuild.build.OtoYedekParca.props
-C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.OtoYedekParca.props
-C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.OtoYedekParca.props
-C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\staticwebassets.pack.json
 C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\Umut\Desktop\yedekparca\otoyedekparca\otoyedekparca\obj\Debug\net6.0\scopedcss\bundle\OtoYedekParca.styles.css

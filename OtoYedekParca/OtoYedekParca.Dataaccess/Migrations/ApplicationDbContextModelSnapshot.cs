@@ -348,10 +348,6 @@ namespace OtoYedekParca.Dataaccess.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
-                    b.Property<string>("AdSoyad")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("longtext");
@@ -361,6 +357,12 @@ namespace OtoYedekParca.Dataaccess.Migrations
                         .HasColumnType("varchar(256)");
 
                     b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("ImagePath")
+                        .HasColumnType("longtext");
+
+                    b.Property<bool>("IsAdmin")
                         .HasColumnType("tinyint(1)");
 
                     b.Property<bool>("LockoutEnabled")

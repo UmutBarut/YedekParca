@@ -32,7 +32,7 @@ builder.Services.AddDbContext<ApplicationDbContext>();
 builder.Services.AddIdentity<User , IdentityRole>(x => 
 {
     x.Password.RequireNonAlphanumeric = false;
-    x.Password.RequiredLength = 6;
+    x.Password.RequiredLength = 5;
     x.Password.RequireLowercase = false;
     x.Password.RequireDigit = false;
     x.Password.RequireUppercase = false;
@@ -62,13 +62,23 @@ app.UseAuthorization();
 app.UseEndpoints(endpoints =>
 {
      endpoints.MapControllerRoute(
+      name: "KayitOl",
+      pattern: "KayitOl",
+      defaults: new { controller = "Auth", action = "Register" }
+  );
+     endpoints.MapControllerRoute(
       name: "GirisYap",
       pattern: "GirisYap",
-      defaults: new { controller = "Login", action = "Login" }
+      defaults: new { controller = "Auth", action = "Login" }
   );
     endpoints.MapControllerRoute(
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}"
+    );
+    endpoints.MapControllerRoute(
+        name: "Anasayfa",
+        pattern: "Anasayfa",
+        defaults: new { controller = "Home", action = "Index" }
     );
      endpoints.MapControllerRoute(
         name: "hakkimizda",
