@@ -18,13 +18,32 @@ namespace OtoYedekParca.Business.Concrete
         private readonly IUrunService _urunService;
         private readonly IFileHelper _fileHelper;
         private readonly IModelService _modelService;
+        private readonly UserManager<User> _userManager;
 
-        public FileManager(IMarkaService markaService, IFileHelper fileHelper,IUrunService urunService, IModelService modelService)
+        public FileManager(IMarkaService markaService, IFileHelper fileHelper,IUrunService urunService, IModelService modelService,UserManager<User> userManager)
         {
             _markaService = markaService;
             _fileHelper = fileHelper;
             _urunService = urunService;
             _modelService = modelService;
+        }
+
+        public async Task<OtoYedekParca.Core.Utilities.Results.IResult> Add(IFormFile file, User user)
+        {
+            string folderName = "avatars";
+            if (!string.IsNullOrEmpty(user.ImagePath))
+            {
+                _fileHelper.Remove(user.ImagePath,folderName);
+            }
+            var imageResult = _fileHelper.Upload(file,folderName);
+            if (!imageResult.Success)
+            {
+                return new ErrorResult("Resim Yüklenemedi.");
+            }
+
+            user.ImagePath = imageResult.Message;
+            await _userManager.UpdateAsync(user);
+            return new SuccessResult("Resim Başarıyla Yüklendi");
         }
 
         public async Task<OtoYedekParca.Core.Utilities.Results.IResult> AddForUrun(IFormFile file, Urun urun)

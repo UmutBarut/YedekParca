@@ -15,7 +15,7 @@ namespace OtoYedekParca.Controllers
 
 
         public IActionResult Index()
-            {var userName = User.Identity.Name;
+        {   var userName = User.Identity.Name;
             ViewData["UserName"] = userName;
             return View("Index");
         }

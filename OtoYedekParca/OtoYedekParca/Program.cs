@@ -42,8 +42,11 @@ builder.Services.AddIdentity<User , IdentityRole>(x =>
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.LoginPath = "/GirisYap";
+    // options.ReturnUrlParameter = "/Home/Index";
+    options.LoginPath = "/Auth/Login";
     options.Cookie.Name = "auth_cookie";
-    options.ExpireTimeSpan = TimeSpan.FromMinutes(15);
+    options.SlidingExpiration = false;
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
     options.ReturnUrlParameter = CookieAuthenticationDefaults.ReturnUrlParameter;
 });
 

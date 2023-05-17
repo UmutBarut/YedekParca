@@ -1,120 +1,10 @@
-﻿@* @using OtoYedekParca.ViewModels;
-@model UserSignUpViewModel
-
-@{Layout = "Layout";}
-
-<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
-    <div class=" container-xxl " id="kt_content_container">
-
-        <div class="container" style="height: 100%;">
-            <div class="row pb-10" style="height: max-content;">
-                <div class="container mt-10 pb-10 shadow" style="height: max-content; width: 400px; min-height: fit-content; border: 1px solid #e0e0e0; border-radius:12px;">
-                    <div class="d-flex justify-content-center pt-10">
-                        <img src="~/app/images/register.svg" width="350px" style="padding:25px;" alt="">
-                    </div>
-                    <div class="container pt-10">
-                        <h2 class="text-center pb-5">Yeni Kullanıcı Oluştur</h2>
-                        <form method="post" >
-                            <div class="text-danger" asp-validation-summary="ModelOnly">
-
-                            </div>         
-                            <!-- Email input -->
-                            <div class="form-outline mb-4">
-                                <input type="text" class="form-control " asp-for="@Model.Username"/>
-                                <label class="form-label pt-2" for="form1Example13">Kullanıcı adı</label>
-                            </div>
-
-                            <div class="form-outline mb-4">
-                                <span asp-validation-for="@Model.Mail" class="text-danger"></span>
-                                <input type="text" class="form-control " asp-for="@Model.Mail" placeholder="name@example.com"/>
-                                <label class="form-label pt-2" for="form1Example13">Email</label>
-                            </div>
-
-                            <!-- Password input -->
-                            <div class="form-outline mb-4">
-                                <span asp-validation-for="@Model.Password" class="text-danger"></span>
-                                <input type="password" class="form-control" asp-for="@Model.Password" placeholder="..........."/>
-                                <label class="form-label pt-2" for="form1Example23">Parola (Min. 5 haneli)</label>
-                            </div>
-
-                            <div class="form-outline mb-4">
-                                <span asp-validation-for="@Model.ConfirmPassword" class="text-danger"></span>
-                                <input type="password" class="form-control" asp-for="@Model.ConfirmPassword" placeholder="..........."/>
-                                <label class="form-label pt-2" for="form1Example23">Parola Tekrar</label>
-                            </div>                   
-
-                            <!-- Submit button -->
-                            <button type="submit"  class="btn btn-primary btn-lg w-100">Kayıt Et</button>
-
-                            <div class="container text-center my-4">
-                                <p class="text-center fw-bold mx-3 mb-0 text-muted">HHT Yazılım</p>
-                                <p class="text-center mx-3 mb-0 text-muted">Tüm Hakları Saklıdır.</p>
-                            </div>     
-                        </form>
-                    </div>
-                </div>         
-            </div>
-        </div>
-    </div>
-</div> *@
-
-
-
-
-@using OtoYedekParca.ViewModels;
+﻿@using OtoYedekParca.ViewModels;
 @model UserSignUpViewModel
 
 @{
 	Layout = "_authlayout";
 }
 
-<!DOCTYPE html>
-<!--
-Author: Keenthemes
-Product Name: Metronic 
-Product Version: 8.1.8
-Purchase: https://1.envato.market/EA4JP
-Website: http://www.keenthemes.com
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Dribbble: www.dribbble.com/keenthemes
-Like: www.facebook.com/keenthemes
-License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
--->
-<html lang="en" >
-    @* <!--begin::Head-->
-    <head>
-        <title>Kayıt Ol</title>
-        <meta charset="utf-8"/>
-        <meta name="description" content="
-            The most advanced Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, 
-            Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel versions. 
-            Grab your copy now and get life-time updates for free.
-        "/>
-        <meta name="keywords" content="
-            metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, 
-            Node.js, Flask, Symfony & Laravel starter kits, admin themes, web design, figma, web development, free templates, 
-            free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, 
-            bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon
-        "/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>      
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="
-            Metronic - Bootstrap Admin Template, HTML, VueJS, React, Angular. Laravel, Asp.Net Core, Ruby on Rails, 
-            Spring Boot, Blazor, Django, Express.js, Node.js, Flask Admin Dashboard Theme & Template
-        " />
-        <meta property="og:url" content="https://keenthemes.com/metronic"/>
-        <meta property="og:site_name" content="Keenthemes | Metronic" />
-        <link rel="canonical" href="https://preview.keenthemes.com/metronic8"/>
-        <link rel="shortcut icon" href="/metronic8/demo7/assets/media/logos/favicon.ico"/>
-
-        <!--begin::Fonts(mandatory for all pages)-->
-              
-        <!--end::Fonts-->
-
-    </head>
-    <!--end::Head--> *@
 
     <!--begin::Body-->
     <body id="kt_body" class="auth-bg bgi-size-cover bgi-attachment-fixed bgi-position-center bgi-no-repeat">
@@ -148,8 +38,8 @@ License: For each use you must have a valid license purchased only from above li
                         <!--begin::Aside-->
                         <div class="d-flex flex-center flex-lg-start flex-column">              
                             <!--begin::Logo-->
-                            <a href="/metronic8/demo7/../demo7/index.html" class="mb-7">
-                                <img alt="Logo" src="/metronic8/demo7/assets/media/logos/custom-3.svg"/>
+                            <a asp-controller="Home" asp-action="Index">
+                                <img alt="Logo" height="500" width="500" src="/demo7/dist/assets/media/illustrations/dozzy-1/4.png"/>
                             </a>    
                             <!--end::Logo-->            
 
@@ -164,13 +54,18 @@ License: For each use you must have a valid license purchased only from above li
                     <!--begin::Aside-->
 
                     <!--begin::Body-->
-                    <div class="d-flex flex-column-fluid flex-lg-row-auto justify-content-center justify-content-lg-end p-12 p-lg-20">
+                    <div class="d-flex flex-column-fluid flex-lg-row-auto justify-content-center justify-content-lg-end p-12 pt-2 p-lg-20">
                         <!--begin::Card-->
                         <div class="bg-body d-flex flex-column align-items-stretch flex-center rounded-4 w-md-600px p-20">
                             <!--begin::Wrapper-->
-                            <div class="d-flex flex-center flex-column flex-column-fluid px-lg-10 pb-15 pb-lg-20">
+                            <div class="d-flex flex-center flex-column flex-column-fluid px-lg-10 pb-5 pb-lg-10">
                                 <!--begin::Form-->
-                                <form class="form w-100" novalidate="novalidate" id="kt_sign_up_form" method="POST">
+                                <form asp-controller="Auth" asp-action="Register" method="POST" class="form w-100" novalidate="novalidate" id="kt_sign_up_form">
+
+                                    <div class="text-danger" asp-validation-summary="ModelOnly">
+
+                                    </div>
+
                                     <!--begin::Heading-->
                                     <div class="text-center mb-11">
                                         <!--begin::Title-->
@@ -188,9 +83,17 @@ License: For each use you must have a valid license purchased only from above li
                                     <!--begin::Heading-->
 
                                     <!--begin::Input group--->
+
+                                     <div class="fv-row mb-8">
+                                        <!--begin::Email-->
+                                        <span asp-validation-for="@Model.Mail" class="text-danger"></span>
+                                        <input type="text" asp-for="@Model.Mail" placeholder="Email" autocomplete="off" class="form-control bg-transparent"/> 
+                                        <!--end::Email-->
+                                    </div>
+
                                     <div class="fv-row mb-8">
                                         <!--begin::Email-->
-                                        <input type="text" placeholder="Kullanıcı Adı" autocomplete="off" class="form-control bg-transparent"/> 
+                                        <input type="text" asp-for="@Model.Username" placeholder="Kullanıcı Adı" autocomplete="off" class="form-control bg-transparent"/> 
                                         <!--end::Email-->
                                     </div>
 
@@ -199,8 +102,9 @@ License: For each use you must have a valid license purchased only from above li
                                         <!--begin::Wrapper-->
                                         <div class="mb-1">
                                             <!--begin::Input wrapper-->
-                                            <div class="position-relative mb-3">    
-                                                <input class="form-control bg-transparent" type="password" placeholder="Şifre" autocomplete="off"/>
+                                            <div class="position-relative mb-3">
+                                                <span asp-validation-for="@Model.Password" class="text-danger"></span>    
+                                                <input class="form-control bg-transparent" asp-for="@Model.Password" type="password" placeholder="Şifre" autocomplete="off"/>
 
                                                 <span class="btn btn-sm btn-icon position-absolute translate-middle top-50 end-0 me-n2" data-kt-password-meter-control="visibility">
                                                     <i class="ki-duotone ki-eye-slash fs-2"></i>
@@ -232,7 +136,7 @@ License: For each use you must have a valid license purchased only from above li
                                     <!--end::Input group--->
                                     <div class="fv-row mb-8">    
                                         <!--begin::Repeat Password-->
-                                        <input type="text" placeholder="Şifre tekrar" name="confirm-password" type="password" autocomplete="off" class="form-control bg-transparent"/>
+                                        <input type="text" asp-for="@Model.ConfirmPassword" placeholder="Şifre tekrar"  autocomplete="off" class="form-control bg-transparent"/>
                                         <!--end::Repeat Password-->
                                     </div>
                                     <!--end::Input group--->
@@ -287,6 +191,12 @@ License: For each use you must have a valid license purchased only from above li
                                     <div class="d-flex justify-content-start col-md-6 text-center">
                                         <a asp-controller="Home" asp-action="Contact">Bize Ulaşın</a>
                                     </div>
+                                    <div class="d-flex justify-content-center mt-4">
+                                        <p class="text-center fw-bold mx-2 mb-0 text-muted">Aku Yedek Parça</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                         <p class="text-center mx-3 mb-0 text-muted">© Tüm Hakları Saklıdır.</p>
+                                    </div>
                                 </div>
                             <!--end::Footer-->
                         </div>
@@ -300,11 +210,10 @@ License: For each use you must have a valid license purchased only from above li
         <!--end::Main-->
     </body>
     <!--end::Body-->
-</html>
 
 <script>
     // Element to indecate
-    var button = document.querySelector("#kt_sign_in_submit");
+    var button = document.querySelector("#kt_sign_up_submit");
 
     // Handle button click event
     button.addEventListener("click", function() {
