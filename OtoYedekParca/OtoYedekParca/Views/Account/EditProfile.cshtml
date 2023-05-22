@@ -1,0 +1,238 @@
+@using OtoYedekParca.Entity;
+@model User
+
+@{
+    if (String.IsNullOrEmpty(Model.ImagePath))
+    {
+        Model.ImagePath = "blank.jpg";
+    }
+}
+
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+    <div class=" container-xxl " id="kt_content_container">
+        <!--begin::Navbar-->
+        <div class="card mb-5 mb-xl-10">
+            <div class="card-body pt-9 pb-0">
+                <!--begin::Details-->
+                <div class="d-flex flex-wrap flex-sm-nowrap">
+                    <!--begin: Pic-->
+                    <div class="me-7 mb-4">
+                        <div class="symbol symbol-100px symbol-lg-160px symbol-fixed position-relative">
+                            <img style="object-fit: cover;" src="~/app/images/avatars/@Model.ImagePath"/>  
+                        </div>
+                    </div>
+                    <!--end::Pic-->
+    
+                    <!--begin::Info-->
+                    <div class="flex-grow-1">
+                        <!--begin::Title-->
+                        <div class="d-flex justify-content-between align-items-start flex-wrap mb-2">
+                            <!--begin::User-->
+                            <div class="d-flex flex-column">
+                                <!--begin::Name-->
+                                <div class="d-flex align-items-center mb-2">
+                                    <a href="#" class="text-gray-900 text-hover-primary fs-2 fw-bold me-1">@Model.UserName</a>
+                                    <a href="#"><i class="ki-duotone ki-verify fs-1 text-primary"><span class="path1"></span><span class="path2"></span></i></a>
+                                </div>
+                                <!--end::Name-->
+
+                                <!--begin::Info-->                        
+                                <div class="d-flex flex-wrap fw-semibold fs-6 mb-4 pe-2">
+                                    <a href="#" class="d-flex align-items-center text-gray-400 text-hover-primary me-5 mb-2">
+                                        <i class="ki-duotone ki-profile-circle fs-4 me-1"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>Developer
+                                    </a>
+                                    <a href="#" class="d-flex align-items-center text-gray-400 text-hover-primary me-5 mb-2">
+                                        <i class="ki-duotone ki-geolocation fs-4 me-1"><span class="path1"></span><span class="path2"></span></i>SF, Bay Area
+                                    </a>
+                                    <a href="#" class="d-flex align-items-center text-gray-400 text-hover-primary mb-2">
+                                        <i class="ki-duotone ki-sms fs-4 me-1"><span class="path1"></span><span class="path2"></span></i>max@kt.com
+                                    </a>
+                                </div>
+                                <!--end::Info-->
+                            </div>
+                            <!--end::User-->
+
+                            <!--begin::Actions-->
+                            <div class="d-flex my-4">
+                                <a href="#" class="btn btn-sm btn-light me-2" id="kt_user_follow_button">
+                                    <i class="ki-duotone ki-check fs-3 d-none"></i>   
+
+                                    <!--begin::Indicator label-->
+                                    <span class="indicator-label">
+                                        Follow</span>
+                                    <!--end::Indicator label-->
+
+                                    <!--begin::Indicator progress-->
+                                    <span class="indicator-progress">
+                                        Please wait...    <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                                    </span>
+                                    <!--end::Indicator progress-->                     
+                                </a>
+                            </div>
+                            <!--end::Actions-->
+                        </div>
+                        <!--end::Title-->
+
+                        <!--begin::Stats-->
+                        <div class="d-flex flex-wrap flex-stack">
+                            <!--begin::Wrapper-->
+                            <div class="d-flex flex-column flex-grow-1 pe-8">
+                                <!--begin::Stats-->
+                                <div class="d-flex flex-wrap">
+                                     <!--begin::Stat-->
+                                    <div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
+                                        <!--begin::Number-->
+                                        <div class="d-flex align-items-center">
+                                            <i class="ki-duotone ki-arrow-down fs-3 text-danger me-2"><span class="path1"></span><span class="path2"></span></i><div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="6">0</div>
+                                        </div>
+                                        <!--end::Number-->
+                                        <!--begin::Label-->
+                                        <div class="fw-semibold fs-6 text-gray-400">Sepetteki Ürünler</div>
+                                        <!--end::Label-->
+                                    </div>
+                                    <!--end::Stat--> 
+                                </div>
+                                <!--end::Stats-->
+                            </div>
+                            <!--end::Wrapper-->
+
+                            <!--begin::Progress-->
+                            <div class="d-flex align-items-center w-200px w-sm-300px flex-column mt-3">
+                                <div class="d-flex justify-content-between w-100 mt-auto mb-2">
+                                    <span class="fw-semibold fs-6 text-gray-400">Profil Tamamlandı</span>
+                                    <span class="fw-bold fs-6">50%</span>
+                                </div>
+
+                                <div class="h-5px mx-3 w-100 bg-light mb-3">
+                                    <div class="bg-success rounded h-5px" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <!--end::Progress-->
+                        </div>
+                        <!--end::Stats-->
+                    </div>
+                    <!--end::Info-->
+                </div>
+                <!--end::Details-->   
+
+                
+            </div>
+        </div>
+        <!--end::Navbar-->
+
+        <!--begin::details View-->
+        <div class="card mb-0 mb-xl-10" id="kt_profile_details_view">
+            <!--begin::Card header-->
+            <div class="card-header cursor-pointer">
+                <!--begin::Card title-->
+                <div class="card-title m-0">
+                    <h3 class="fw-bold m-0 ">Profil Detayları</h3>
+                </div>
+                <!--end::Card title-->  
+            </div>
+            <!--begin::Card header-->
+
+            <form asp-controller="Account" asp-action="EditProfile" method="POST" enctype="multipart/form-data">
+                <!--begin::Card body-->
+                <div class="card-body p-8">   
+                    <div class="row mb-7">
+                        <label class="col-lg-4 fw-semibold text-muted">Profil Resmi</label>
+                        <div class="col-lg-8">
+                            <!--begin::Image input-->
+                            <div class="image-input image-input-outline" data-kt-image-input="true">
+
+                                 @if(Model.ImagePath == null)
+                                {
+                                    <!--begin::Image preview wrapper-->
+                                    <div class="image-input-wrapper w-125px h-125px"
+                                        style="background-image: url(/app/images/avatars/blank.jpg)"></div>
+                                    <!--end::Image preview wrapper-->
+                                }
+                                else
+                                {
+                                    <!--begin::Image preview wrapper-->
+                                    <div class="image-input-wrapper w-125px h-125px"
+                                        style="background-image: url((/app/images/avatars/@Model.ImagePath)"></div>
+                                    <!--end::Image preview wrapper-->
+                                }    
+                               
+                                <!--begin::Edit button-->
+                                <label
+                                    class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
+                                    data-kt-image-input-action="change" data-bs-toggle="tooltip" data-bs-dismiss="click"
+                                    title="Change avatar">
+                                    <i class="bi bi-pencil-fill fs-7"></i>
+
+                                    <!--begin::Inputs-->
+                                    <input type="file" name="file" accept=".png, .jpg, .jpeg" style="object-fit:cover;" />
+                                    <input type="hidden" name="avatar_remove" />
+                                    <!--end::Inputs-->
+                                </label>
+                                <!--end::Edit button-->
+
+                                <!--begin::Cancel button-->
+                                <span
+                                    class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
+                                    data-kt-image-input-action="cancel" data-bs-toggle="tooltip" data-bs-dismiss="click"
+                                    title="Cancel avatar">
+                                    <i class="bi bi-x fs-2"></i>
+                                </span>
+                                <!--end::Cancel button-->
+
+                                <!--begin::Remove button-->
+                                <span
+                                    class="btn btn-icon btn-circle btn-color-muted btn-active-color-primary w-25px h-25px bg-body shadow"
+                                    data-kt-image-input-action="remove" data-bs-toggle="tooltip" data-bs-dismiss="click"
+                                    title="Remove avatar">
+                                    <i class="bi bi-x fs-2"></i>
+                                </span>
+                                <!--end::Remove button-->
+                            </div>
+                            <!--end::Image input-->
+                            <div class="form-text mt-3">Allowed file types:  png, jpg, jpeg.</div>
+                        </div>
+                    </div>
+                
+                    <!--begin::Row-->
+                    <div class="row mb-7">
+                        <!--begin::Label-->
+                        <label class="col-lg-4 fw-semibold text-muted required">Kullanıcı Adı</label>
+                        <!--end::Label-->
+                        <div class="col-lg-8">
+                            <input type="text" class="form-control form-control-solid" name="UserName" value="@Model.UserName"/>
+                        </div>
+                    </div>
+                    <!--end::Row-->
+
+                    <!--begin::Input group-->
+                    <div class="row mb-7">
+                        <!--begin::Label-->
+                        <label class="col-lg-4 fw-semibold text-muted required">E-mail</label>
+                        <!--end::Label-->
+                        <div class="col-lg-8">
+                            <input type="email" class="form-control form-control-solid" name="Email" value="@Model.Email" />
+                        </div>
+                    </div>
+                    <!--end::Input group-->
+
+                    <!--begin::Input group-->
+                    <div class="row mb-7">
+                    <!--begin::Label-->
+                    <label class="col-lg-4 fw-semibold text-muted">İletişim Numarası</label>
+                        <!--end::Label-->
+                        <div class="col-lg-8">
+                            <input type="text" class="form-control form-control-solid" name="PhoneNumber" value="@Model.PhoneNumber" />
+                        </div>
+                    </div>
+                    <!--end::Input group-->
+                </div>
+                <!--end::Card body-->
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-sm btn-primary" style="float: right;">Kaydet</button>   
+                </div> 
+            </form>    
+            
+        </div>
+        <!--end::details View-->
+    </div>
+</div>

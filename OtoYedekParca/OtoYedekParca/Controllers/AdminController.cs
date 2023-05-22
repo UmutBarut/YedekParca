@@ -84,17 +84,52 @@ namespace OtoYedekParca.Controllers
         }
 
         
+        public IActionResult UrunGrup()
+        {
+            return View();
+        }
 
         [HttpGet]
+        public object GetAllUrunGrup(DataSourceLoadOptions loadOptions)
+        {
+            var result = _urunGrupService.GetAll(c=>c.Pasif == false).Data;
+            return DataSourceLoader.Load(result, loadOptions);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddUrunGrup(string values)
+        {
+            var urunGrup = new UrunGrup();
+            JsonConvert.PopulateObject(values, urunGrup);
+            var result = _urunGrupService.Add(urunGrup);
+            return Ok(result);
+        }
+
+        [HttpPut]
+        public IActionResult UpdateUrunGrup(int key, string values)
+        {
+            var urunGrup = _urunGrupService.GetAll(c => c.GrupId == key).Data.FirstOrDefault();
+            JsonConvert.PopulateObject(values, urunGrup);
+            var result = _urunGrupService.Update(urunGrup);
+            return Ok(result);
+        }
+
+        [HttpDelete]
+        public IActionResult DeleteUrunGrup(int key)
+        {
+            var urunGrup = _urunGrupService.GetAll(c => c.GrupId == key).Data.FirstOrDefault();
+            urunGrup.Pasif = true;
+            var result = _urunGrupService.Update(urunGrup);
+            return Ok(result);
+        }
+
+        
+
+      
         public IActionResult Urun()
         {
-            TanimlamaViewModel model = new TanimlamaViewModel()
-            {
-                markalar = _markaService.GetAll().Data,
-                modeller = _modelService.GetAll().Data,
-                tipler = _tipService.GetAll().Data,
-                urunGruplari = _urunGrupService.GetAll().Data
-            };
+           
+            var model = _urunGrupService.GetAll().Data;
 
             return View(model);
         }

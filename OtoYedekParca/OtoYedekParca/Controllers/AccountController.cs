@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using OtoYedekParca.Business.Abstracts;
 using OtoYedekParca.Entity;
+using OtoYedekParca.ViewModels;
 
 namespace OtoYedekParca.Controllers
 {
@@ -26,10 +27,42 @@ namespace OtoYedekParca.Controllers
             return View(user);
         }
 
+        public async Task<IActionResult> EditProfile()
+        {
+            user = await GetUser();
+
+            return View(user);
+        }
+
+         [HttpPost]
+        public async Task<IActionResult> EditProfile(IFormFile file, User user)
+        {
+            var userx = await _userManager.GetUserAsync(HttpContext.User);
+          
+            userx.Email = user.Email;
+            userx.PhoneNumber = user.PhoneNumber;
+            userx.UserName = user.UserName;
+
+            await _userManager.UpdateAsync(user);
+
+            if(file != null)
+            {
+              await _fileService.Add(file,user);
+            }
+
+            
+
+            return RedirectToAction("Index","Account");
+        }
+
+
+
+
+
+
 
         // public async Task<IActionResult> UploadImage(IFormFile file)
-        // {
-            
+        // {  
         //     user = await GetUser();
         //     await _fileService.Add(file, user);
         //     return RedirectToAction("Index");

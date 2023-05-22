@@ -11,6 +11,7 @@ namespace OtoYedekParca.Entity
     {
         [Key]
         public int GrupId { get; set; }
-        public int GrupAdi { get; set; }
+        public string GrupAdi { get; set; }
+        public bool Pasif { get; set; }
     }
 }

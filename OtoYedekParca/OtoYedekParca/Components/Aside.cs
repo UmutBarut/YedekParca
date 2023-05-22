@@ -17,7 +17,7 @@ namespace OtoYedekParca.Components
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var user = await _userManager.GetUserAsync(HttpContext.User);
-            return View("_Toolbar",user);
+            return View("_Aside",user);
         }
     }
 }

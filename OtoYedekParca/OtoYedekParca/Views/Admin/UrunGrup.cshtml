@@ -1,0 +1,75 @@
+@using OtoYedekParca.Entity;
+
+@model UrunGrup
+
+
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+    <div class=" container-xxl " id="kt_content_container">
+
+            <div class="container">
+                <div class="card card-flush shadow-sm">
+                    <div class="card-header">
+                        <h3 class="card-title">Stok Kategorisi Tanımlayın</h3>
+                    </div>
+                    <div class="card-body py-5">
+
+                        @(Html.DevExtreme().DataGrid<UrunGrup>()
+                            .ID("dxContainer")
+                            .DataSource(d => d.Mvc()
+                            .Controller("Admin")
+                            .LoadAction("GetAllUrunGrup")
+                            .UpdateAction("UpdateUrunGrup")
+                            .DeleteAction("DeleteUrunGrup")
+                            .InsertAction("AddUrunGrup")
+                            .Key("GrupId")
+
+                            )
+                            .RemoteOperations(true)
+                            .Columns(columns => {
+
+                            columns.AddFor(m => m.GrupAdi).AllowEditing(true).Alignment(HorizontalAlignment.Left).Caption("Grup Adı").AllowFiltering(true);
+
+                            })
+                            .SearchPanel(s => s
+                            .Visible(true)
+                            .HighlightCaseSensitive(true)
+                            .Placeholder("Ara")
+                            .Width(200)
+                            )
+                            .FilterRow(f => f.Visible(true))
+                            .HeaderFilter(f => f.Visible(true))
+                            .Height("100%")
+                            .ShowBorders(true)
+                            .GroupPanel(p => p.Visible(true).EmptyPanelText("Ürün Kategorileri"))
+                            .Paging(paging => paging.PageSize(10))
+                            .Editing(e =>
+                            e.AllowAdding(true)
+                            .AllowDeleting(true)
+                            .AllowUpdating(true)
+                            .UseIcons(true) 
+                            .Mode(GridEditMode.Popup)
+                            .Popup(p=>
+                            p.Title("Kategori Ekle & Düzenle")
+                            .ShowTitle(true)
+                            .Width(700)
+                            ))
+                            .Pager(p=>
+                            p.AllowedPageSizes(new JS("[5, 10, 20]"))
+                            .ShowNavigationButtons(true)
+                            .ShowPageSizeSelector(true)
+                            .Visible(true)
+                            .ShowNavigationButtons(true)
+                            .ShowInfo(true)
+                            .DisplayMode(GridPagerDisplayMode.Full)
+                            )
+                            .Grouping(g => g.AutoExpandAll(false))
+                            )
+                    </div>
+                    <div class="card-footer">
+
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -13,8 +13,8 @@ namespace OtoYedekParca.Business.Abstracts
     public interface IFileService
     {
         Task<OtoYedekParca.Core.Utilities.Results.IResult> Add(IFormFile file, User user);
-       Task<OtoYedekParca.Core.Utilities.Results.IResult> AddForMarka(IFormFile dosya, Marka marka);
-       Task<OtoYedekParca.Core.Utilities.Results.IResult> AddForUrun(IFormFile dosya, Urun urun);
-        Task<OtoYedekParca.Core.Utilities.Results.IResult> AddForModel(IFormFile dosya, Model model);
+        Task<OtoYedekParca.Core.Utilities.Results.IResult> AddForMarka(IFormFile file, Marka marka);
+        Task<OtoYedekParca.Core.Utilities.Results.IResult> AddForUrun(IFormFile file, Urun urun);
+        Task<OtoYedekParca.Core.Utilities.Results.IResult> AddForModel(IFormFile file, Model model);
     }
 }

@@ -26,6 +26,7 @@ namespace OtoYedekParca.Business.Concrete
             _fileHelper = fileHelper;
             _urunService = urunService;
             _modelService = modelService;
+            _userManager = userManager;
         }
 
         public async Task<OtoYedekParca.Core.Utilities.Results.IResult> Add(IFormFile file, User user)

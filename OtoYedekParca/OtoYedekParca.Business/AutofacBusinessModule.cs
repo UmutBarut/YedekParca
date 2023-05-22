@@ -37,6 +37,9 @@ namespace OtoYedekParca.Business.DependencyResolvers.Autofac
             builder.RegisterType<MotorManager>().As<IMotorService>().SingleInstance();
             builder.RegisterType<MotorDal>().As<IMotorDal>().SingleInstance();
 
+            builder.RegisterType<Tip_MotorManager>().As<ITip_MotorService>().SingleInstance();
+            builder.RegisterType<Tip_MotorDal>().As<ITip_MotorDal>().SingleInstance();
+
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
             builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces().EnableInterfaceInterceptors(new ProxyGenerationOptions()

@@ -332,8 +332,12 @@ namespace OtoYedekParca.Dataaccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("GrupAdi")
-                        .HasColumnType("int");
+                    b.Property<string>("GrupAdi")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<bool>("Pasif")
+                        .HasColumnType("tinyint(1)");
 
                     b.HasKey("GrupId");
 

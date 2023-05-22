@@ -90,7 +90,8 @@ namespace OtoYedekParca.Controllers
         public IActionResult Register()
         {
             ViewData["Title"] = "Kayıt Ol";
-            return View();
+            var model = new UserSignUpViewModel();
+            return View(model);
         }
 
        
@@ -109,7 +110,7 @@ namespace OtoYedekParca.Controllers
 
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Auth", "Login");
+                    return RedirectToAction("Index", "Home");
 
                 }
                 else

@@ -190,12 +190,12 @@
 											</span>
 											<span onclick="activate()" class="menu-title">Anasayfa</span>
 										</a>
-									</div>
+									</div> 
 									<!--end::Menu item--> *@
 
 									<!--begin::Menu item-->
 									<div class="menu-item">
-										<a asp-controller="Katalog" asp-action="KatalogListe" class="menu-link py-3">
+										<a asp-controller="Katalog" asp-action="Index" class="menu-link py-3">
 											<span class="menu-icon">
 												<i class="fa-solid fa-bars"></i>
 											</span>
@@ -219,7 +219,20 @@
 												<!--end::Menu link-->
 
 											<!--begin::Menu sub-->
-											<div class="menu-sub menu-sub-accordion pt-3">
+											<div class="menu-sub menu-sub-accordion pt-3"> 
+
+												<!--begin::Menu item-->
+												<div class="menu-item">
+													<a asp-controller="Admin" asp-action="UrunGrup"
+													class="menu-link py-3">
+														<span class="menu-bullet">
+															<span class="bullet bullet-dot"></span>
+														</span>
+														<span onclick="activate()" class="menu-title">Ürün Grubu Tanımlama</span>
+													</a>
+												</div>
+												<!--end::Menu item-->
+
 												<!--begin::Menu item-->
 												<div class="menu-item">
 													<a asp-controller="Admin" asp-action="Urun"
@@ -304,17 +317,7 @@
 												</div>
 												<!--end::Menu item-->
 
-												<!--begin::Menu item-->
-												<div class="menu-item">
-													<a asp-controller=" " asp-action=" "
-													class="menu-link py-3">
-														<span class="menu-bullet">
-															<span class="bullet bullet-dot"></span>
-														</span>
-														<span onclick="activate()" class="menu-title">Mo asdsalama</span>
-													</a>
-												</div>
-												<!--end::Menu item-->
+												
 											</div>
 											<!--end::Menu sub-->
 										</div>
@@ -343,6 +346,23 @@
 										</a>
 									</div>
 									<!--end::Menu item-->
+
+								@* @if(User.Identity.IsAuthenticated)
+								{
+									<div class="menu-item">
+										<a class="menu-link" asp-controller="Account" asp-action="Index" onclick="setmenu('profil')"
+											id="profil">
+											<span class="menu-icon">
+												<!--begin::Svg Icon | path: icons/duotune/art/art002.svg-->
+												<img width="30" height="30" style="object-fit:cover;border-radius:5px;"
+													src="~/app/images/avatars/@Model.ImagePath" alt="" />
+												<!--end::Svg Icon-->
+											</span>
+											<span onclick="activate()" class="pl-2 menu-title">@Model.UserName</span>
+										</a>
+									</div>
+								} *@
+									
 
 
 								</div>

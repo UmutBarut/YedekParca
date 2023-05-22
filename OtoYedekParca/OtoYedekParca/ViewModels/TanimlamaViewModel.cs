@@ -11,4 +11,11 @@ namespace OtoYedekParca.ViewModels
         public List<Motor> motorlar { get; set; }
         
     }
+
+    public class UrunViewModel
+    {
+        public User User { get; set; }
+        public List<UrunGrup> urunGruplari { get; set; }
+        public Urun urun { get; set; }
+    }
 }
